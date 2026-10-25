@@ -364,12 +364,15 @@ body {
   font-size: 20px;
   color: #7875FE;
   text-decoration: none;
-  margin-top: auto;
-  transition: color 0.2s;
+  padding: 5px 10px;
+  margin-left: -10px; 
+  margin-top: auto; 
+  background-color: transparent;
+  transition: background-color 0.2s ease;
 }
 
 .product-card__link:hover {
-  color: #5B58D6;
+  background-color: #DAD9FB; 
 }
 
 .product-card__arrow {
