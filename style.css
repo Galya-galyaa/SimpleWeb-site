@@ -419,7 +419,6 @@ body {
   width: 100%;
   background-color: #ffffff;
   padding-top: 80px;
-  padding-bottom: 80px;
 }
 
 .banner__container {
@@ -494,3 +493,95 @@ body {
   /* margin-right: -50px; */
 }
 
+.social {
+  width: 100%;
+  background-color: #4C5866; 
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.social__container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 166px;
+  padding-right: 166px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.social__logo-icon {
+  display: block;
+}
+
+.social__logo-text {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.social__icons {
+  display: flex;
+  gap: 34px;
+  align-items: center;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.social__link:hover {
+  opacity: 0.7;
+}
+
+.social__icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.footer {
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer__container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 166px;
+  padding-right: 166px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__text {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #4C5866;
+  text-transform: uppercase;
+}
+
+.footer__r {
+  color: #BCBCBC;
+}
