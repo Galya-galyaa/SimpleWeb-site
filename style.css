@@ -585,3 +585,172 @@ body {
 .footer__r {
   color: #BCBCBC;
 }
+
+@media (max-width: 768px) {
+  
+  .header {
+    border-bottom: none; 
+  }
+
+  .header__container,
+  .hero__container,
+  .features__container,
+  .products__container,
+  .brands__container,
+  .banner__container,
+  .social__container,
+  .footer__container {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .header__container {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .header__logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-bottom: 15px;
+  }
+
+  .header__nav-block {
+    display: contents;
+  }
+
+  .header__actions {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    gap: 30px;
+    justify-self: end;
+    margin-bottom: 15px;
+  }
+
+  .header__nav-list {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    list-style: none;
+    margin: 0;
+    position: relative;
+  }
+
+  .header__nav-list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #DDDDDD;
+    box-shadow: 0 0 0 100vw #DDDDDD; 
+    clip-path: inset(0 -100vw);
+  }
+
+  .header__nav-link { 
+    font-size: 16px; 
+  }
+
+  .header__nav-list::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #DDDDDD;
+    box-shadow: 0 0 0 100vw #DDDDDD;
+    clip-path: inset(0 -100vw);
+  }
+
+  .hero__container {
+    padding-top: 40px;
+    padding-bottom: 0; 
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .hero__content {
+    width: 390px; 
+    margin-top: 0; 
+  }
+
+  .hero__title { 
+    font-size: 50px; 
+    width: 100%;
+    line-height: 1.1; 
+    margin-bottom: 15px;
+  }
+
+  .hero__text { 
+    width: 390px; 
+    height: 110px; 
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .hero__image-wrapper {
+    flex-shrink: 0;
+    margin-left: auto; 
+  }
+
+  .hero__image { 
+    content: url('img/imgnew.svg'); 
+    width: 270px; 
+    height: 409px; 
+    object-fit: contain; 
+    display: block;
+  }
+
+  .features { padding-top: 50px; padding-bottom: 50px; }
+  .features__top { gap: 15px; margin-bottom: 40px; }
+  .feature-card { width: 30%; } 
+  .feature-card__content { flex-direction: column; } 
+  .feature-card__img { width: 100%; height: auto; }
+  .features__bottom { gap: 20px; align-items: flex-start; }
+  .features__image { width: 330px; height: 256px; object-fit: contain; } 
+  .features__content { width: calc(100% - 350px); padding-top: 0; } 
+  .features__title { font-size: 30px; width: 330px; height: 60px; line-height: 1.1; margin-bottom: 10px; }
+  .features__text { width: 330px; height: auto; font-size: 16px; }
+
+  .products { padding-top: 50px; padding-bottom: 50px; }
+  .products__container {
+    display: grid;
+    grid-template-columns: 330px 330px; 
+    justify-content: space-between;
+    gap: 30px; 
+  }
+  .product-card { width: 330px; height: auto; }
+  .product-card__image { width: 330px; height: 180px; object-fit: cover; margin-bottom: 15px; }
+  .product-card__title { font-size: 30px; }
+  .product-card__text { height: 155px; } 
+
+  .brands { padding-top: 40px; padding-bottom: 40px; }
+  .brands__container { display: flex; justify-content: space-between; gap: 10px; }
+  .brands__item { width: 150px; height: 80px; }
+  .brands__image { width: 100%; height: 100%; object-fit: contain; }
+
+  .banner { padding-top: 40px; padding-bottom: 0; }
+  .banner__container { gap: 20px; align-items: flex-start; }
+  .banner__content { width: 330px; }
+  .banner__title { font-size: 30px; width: 100%; margin-bottom: 10px; }
+  .banner__text { width: 330px; height: 124px; font-size: 16px; line-height: 1.4; margin-bottom: 20px; }
+  .banner__image-wrapper { margin-left: auto; margin-right: -35px; }
+  .banner__image { content: url('img/cardnew.svg'); width: 369px; height: 334px; object-fit: contain; display: block; }
+  .banner__button { width: 255px; height: 70px; }
+
+  .social { padding-top: 20px; padding-bottom: 20px; }
+  .social__container { padding-top: 10px; padding-bottom: 10px; }
+}
